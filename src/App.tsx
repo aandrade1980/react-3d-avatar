@@ -11,7 +11,7 @@ function App() {
       camera={{ position: [2, 0, 12.25], fov: 15 }}
       style={{
         width: '100vw',
-        height: '50vh'
+        height: '100vh'
       }}
     >
       <ambientLight intensity={1.25} />
