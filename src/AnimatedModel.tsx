@@ -10,7 +10,7 @@ import { GLTF, IModelProps } from './types/Model';
 export function Model(props: IModelProps) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    '/public/AnimatedModel.glb'
+    '/AnimatedModel.glb'
   ) as GLTF;
   const { actions } = useAnimations(animations, group);
 
@@ -98,4 +98,4 @@ export function Model(props: IModelProps) {
   );
 }
 
-useGLTF.preload('/public/AnimatedModel.glb');
+useGLTF.preload('/AnimatedModel.glb');

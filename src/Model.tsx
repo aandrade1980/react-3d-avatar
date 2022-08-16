@@ -6,7 +6,7 @@ import { useGLTF } from '@react-three/drei';
 import { GLTF, IModelProps } from './types/Model';
 
 export function Model(props: IModelProps) {
-  const { nodes, materials } = useGLTF('/public/Model.glb') as GLTF;
+  const { nodes, materials } = useGLTF('/Model.glb') as GLTF;
 
   return (
     <group {...props} dispose={null}>
@@ -80,4 +80,4 @@ export function Model(props: IModelProps) {
   );
 }
 
-useGLTF.preload('/public/Model.glb');
+useGLTF.preload('/Model.glb');
